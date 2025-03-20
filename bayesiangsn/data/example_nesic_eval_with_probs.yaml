@@ -1,0 +1,89 @@
+G1:
+ text: The system is acceptably safe to operate
+ supportedBy: [S1]
+ inContextOf: [C6]
+
+G2:
+ text: Identified hazards are adequately mitigated
+ supportedBy: [S2]
+ inContextOf: [C7]
+ 
+
+G3: 
+ text: Significant hazards are identified
+ supportedBy: [Sn4]
+ inContextOf: [C5]
+
+G4: 
+ text: Hazard H1 is eliminated
+ supportedBy: [Sn1]
+ inContextOf: [C4]
+
+
+G5: 
+ text: Probability of H2 is below 1 x10e-6 per hour
+ supportedBy: [Sn2, Sn3]
+ inContextOf: [C1, C2, C3] 
+
+
+
+S1:
+ text: If significant hazards are identified, and identified hazards are adequately mitigated, then system is acceptably safe to operate
+ supportedBy: [G2, G3]
+ inContextOf: [J2]
+ 
+
+S2:
+ text: If hazard H1 is adequately mitigated and hazard H2 is adequately mitigated, then all hazards are adequately mitigated
+ supportedBy: [G4, G5]
+ inContextOf: [J1]
+
+
+
+Sn1:
+ text: Positive result of formal verification
+
+Sn2:
+ text: Positive FTA results
+
+Sn3:
+ text: Positive testing results
+
+Sn4:
+ text: Positive review of hazard log
+
+
+
+J1:
+ text: Logic - universal quantification introduction
+
+J2:
+ text: If the total risk is tolerable, then the system is acceptably safe to operate. If all hazards are adequately mitigated, then the total risk is tolerable. Logic - implication introduction
+
+
+
+C1:
+ text: Occurance limit for hazard is 1 x10e-6 per hour
+
+C2:
+ text: Testing toolset is appropriately qualified
+ belief: 0.99
+
+C3:
+ text: FTA tool is appropriately qualified
+ belief: 0.99
+
+C4:
+ text: Model checking tool is appropriately qualified
+ belief: 0.99
+
+C5:
+ text: Hazard reviewers are sufficiently competent
+ belief: 0.99
+
+C6:
+ text: Identified hazards are the hazards in the hazard log
+
+C7:
+ text: Adequately mitigate hazard is one that is eliminated or the one whose frequency of occurence is lower than a predefined limit
+

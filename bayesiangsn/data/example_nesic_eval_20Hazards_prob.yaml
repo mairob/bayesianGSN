@@ -1,0 +1,197 @@
+G1:
+ text: The system is acceptably safe to operate
+ supportedBy: [S1]
+ inContextOf: [C6]
+
+G2:
+ text: Identified hazards are adequately mitigated
+ supportedBy: [S2]
+ inContextOf: [C7]
+
+G3: 
+ text: Significant hazards are identified
+ supportedBy: [Sn4]
+ inContextOf: [C5]
+
+G5: 
+ text: Probability of H2 is below 1 x10e-6 per hour
+ supportedBy: [Sn2, Sn3, Sn5]
+ inContextOf: [C1, C2, C3] 
+
+G4.1: 
+ text: Hazard H1 is eliminated
+ supportedBy: [Sn1.1]
+ inContextOf: [C4]
+G4.3: 
+ text: Hazard H3 is eliminated
+ supportedBy: [Sn1.3]
+ inContextOf: [C4]
+G4.4: 
+ text: Hazard H4 is eliminated
+ supportedBy: [Sn1.4]
+ inContextOf: [C4]
+G4.5: 
+ text: Hazard H5 is eliminated
+ supportedBy: [Sn1.5]
+ inContextOf: [C4]
+G4.6: 
+ text: Hazard H6 is eliminated
+ supportedBy: [Sn1.6]
+ inContextOf: [C4]
+G4.7: 
+ text: Hazard H7 is eliminated
+ supportedBy: [Sn1.7]
+ inContextOf: [C4]
+G4.8: 
+ text: Hazard H8 is eliminated
+ supportedBy: [Sn1.8]
+ inContextOf: [C4]
+G4.9: 
+ text: Hazard H9 is eliminated
+ supportedBy: [Sn1.9]
+ inContextOf: [C4]
+G4.10: 
+ text: Hazard H10 is eliminated
+ supportedBy: [Sn1.10]
+ inContextOf: [C4]
+G4.11: 
+ text: Hazard H11 is eliminated
+ supportedBy: [Sn1.11]
+ inContextOf: [C4]
+G4.12: 
+ text: Hazard H12 is eliminated
+ supportedBy: [Sn1.12]
+ inContextOf: [C4]
+G4.13: 
+ text: Hazard H13 is eliminated
+ supportedBy: [Sn1.13]
+ inContextOf: [C4]
+G4.14: 
+ text: Hazard H14 is eliminated
+ supportedBy: [Sn1.14]
+ inContextOf: [C4]
+G4.15: 
+ text: Hazard H15 is eliminated
+ supportedBy: [Sn1.15]
+ inContextOf: [C4]
+G4.16: 
+ text: Hazard H16 is eliminated
+ supportedBy: [Sn1.16]
+ inContextOf: [C4]
+G4.17: 
+ text: Hazard H17 is eliminated
+ supportedBy: [Sn1.17]
+ inContextOf: [C4]
+G4.18: 
+ text: Hazard H18 is eliminated
+ supportedBy: [Sn1.18]
+ inContextOf: [C4]
+G4.19: 
+ text: Hazard H19 is eliminated
+ supportedBy: [Sn1.19]
+ inContextOf: [C4]
+G4.20: 
+ text: Hazard H20 is eliminated
+ supportedBy: [Sn1.20]
+ inContextOf: [C4]
+
+
+S1:
+ text: If significant hazards are identified, and identified hazards are adequately mitigated, then system is acceptably safe to operate
+ supportedBy: [G2, G3]
+ inContextOf: [J2]
+ 
+
+S2:
+ text: If hazard H1 is adequately mitigated and hazard H2 is adequately mitigated, then all hazards are adequately mitigated
+ supportedBy: [G4.1, G4.3, G4.4, G4.5, G4.6, G4.7, G4.8, G4.9, G4.10, G4.11, G4.12, G4.13, G4.14, G4.15, G4.16, G4.17, G4.18, G4.19, G4.20, G5]
+ inContextOf: [J1]
+
+
+
+Sn1.1:
+ text: Positive result of formal verification
+Sn1.3:
+ text: Positive result of formal verification
+Sn1.4:
+ text: Positive result of formal verification
+Sn1.5:
+  text: Positive result of formal verification
+Sn1.6:
+  text: Positive result of formal verification
+Sn1.7:
+  text: Positive result of formal verification
+Sn1.8:
+  text: Positive result of formal verification
+Sn1.9:
+  text: Positive result of formal verification
+Sn1.10:
+  text: Positive result of formal verification
+Sn1.11:
+  text: Positive result of formal verification
+Sn1.12:
+  text: Positive result of formal verification
+Sn1.13:
+  text: Positive result of formal verification
+Sn1.14:
+  text: Positive result of formal verification
+Sn1.15:
+  text: Positive result of formal verification
+Sn1.16:
+  text: Positive result of formal verification
+Sn1.17:
+  text: Positive result of formal verification
+Sn1.18:
+  text: Positive result of formal verification
+Sn1.19:
+  text: Positive result of formal verification
+Sn1.20:
+  text: Positive result of formal verification
+
+Sn2:
+ text: Positive FTA results
+
+Sn3:
+ text: Positive testing results
+
+Sn4:
+ text: Positive review of hazard log
+
+Sn5:
+ text: Operational history - probability of H2 is greater than 1 x10e-6 per hour 
+
+
+
+J1:
+ text: Logic - universal quantification introduction
+
+J2:
+ text: If the total risk is tolerable, then the system is acceptably safe to operate. If all hazards are adequately mitigated, then the total risk is tolerable. Logic - implication introduction
+
+
+
+C1:
+ text: Occurance limit for hazard is 1 x10e-6 per hour
+
+C2:
+ text: Testing toolset is appropriately qualified
+ belief: 0.99
+
+C3:
+ text: FTA tool is appropriately qualified
+ belief: 0.99
+
+C4:
+ text: Model checking tool is appropriately qualified
+ belief: 0.99
+
+C5:
+ text: Hazard reviewers are sufficiently competent
+ belief: 0.99
+
+C6:
+ text: Identified hazards are the hazards in the hazard log
+
+C7:
+ text: Adequately mitigate hazard is one that is eliminated or the one whose frequency of occurence is lower than a predefined limit
+

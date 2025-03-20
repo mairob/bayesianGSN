@@ -1,0 +1,41 @@
+
+G1:
+ text: Goal 1
+ supportedBy: [S1]
+ inContextOf: [C1]
+
+G2:
+ text: Goal 2
+ supportedBy: [Sn1]
+ inContextOf: [J1, C2]
+
+G3: 
+ text: Goal 3
+ supportedBy: [Sn2]
+ inContextOf: [C3]
+
+S1:
+ text: Strategy 1
+ supportedBy: [G2, G3]
+ inContextOf: [J2]
+
+Sn1:
+ text: Solution 1
+
+Sn2:
+ text: Solution 2
+
+J1:
+ text: Justification 1
+
+J2:
+ text: Justification 2
+
+C1:
+ text: Context 1
+
+C2:
+ text: Context 2
+
+C3:
+ text: Context 3
