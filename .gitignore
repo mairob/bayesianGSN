@@ -6,6 +6,9 @@ __pycache__/
 # C extensions
 *.so
 
+# batch files
+*.bat
+
 # Distribution / packaging
 .Python
 build/
